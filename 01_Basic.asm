@@ -1,0 +1,15 @@
+
+
+ORG 0000H ; COde for adding two hexadecimal..
+LXI H, A2H
+MOV A, M
+MOV B, A
+MOV A, 00H
+MOV C, D
+JZ END
+MULTIPLY:
+ADD B
+DCR C
+JNZ MULTIPLY
+END:
+HLT
